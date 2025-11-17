@@ -1,0 +1,7 @@
+# dependencies
+/dist
+/node_modules
+/build
+
+# env file
+.env

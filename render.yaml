@@ -1,0 +1,28 @@
+version: 1
+
+services:
+  - type: cron
+    name: bot-daily-scraper
+
+    repo: https://github.com/duykhoidev/duykhoidev_repository.git
+    rootDir: scrape/
+
+    branch: feature/normalize_messy_web_content
+
+    schedule: "0 0 * * *"
+
+    env: docker
+
+    plan: starter
+
+    envVars:
+      - key: OPENAI_API_KEY
+        value:
+      - key: ASSISTANT_ID
+        value:
+      - key: ZENDESK_BASE_URL
+        value:
+      - key: DATA_DIR
+        value:
+      - key: PROMT_ID
+        value:

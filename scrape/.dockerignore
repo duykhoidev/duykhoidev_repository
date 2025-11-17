@@ -1,0 +1,15 @@
+node_modules
+dist
+data/
+
+# Ignore git files
+.git
+.gitignore
+
+# Ignore active environment secrets
+.env
+.env.*
+
+# Ignore lock file from different package managers if they exist
+package-lock.json
+yarn.lock
